@@ -8,6 +8,7 @@
   margin-bottom: 15px;
   margin-right: 60px;
 }
+
 .header__menu {
   width: 447px;
   height: 26px;
@@ -31,6 +32,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .header__call-element {
   display: flex;
 }
@@ -52,7 +54,4 @@
   font-size: 18px;
   line-height: 150%;
   color: var(--gray-900);
-}
-
-.header__menu-button {
 }
