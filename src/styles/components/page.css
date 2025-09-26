@@ -7,10 +7,16 @@
 
 .page__header {
   flex-shrink: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .page__content {
   flex-grow: 1;
+}
+
+.page__content--page-title {
+  background-color: var(--gray-200);
 }
 
 .page__footer {
