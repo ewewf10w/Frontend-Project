@@ -1,6 +1,15 @@
 .header {
   display: flex;
   margin-top: 18px;
+  max-width: 12;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1262px;
+  width: 100%;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .header__logo {
@@ -26,11 +35,16 @@
   color: var(--gray-800);
 }
 
+.header__menu-button-current {
+  color: var(--primary);
+}
+
 .header__call {
   width: 421px;
   height: 48px;
   display: flex;
   justify-content: space-between;
+  margin-top: 2px;
 }
 
 .header__call-element {
