@@ -65,5 +65,51 @@
 
 .footer__higher {
   display: flex;
-  justify-content: space-between;
+  gap: 242px;
+}
+
+.footer__mid-element {
+}
+
+.footer__mid-element-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer__mid-element-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.footer__mid-element-text--white {
+  opacity: 1;
+}
+
+.footer__mid-element-discription {
+  gap: 4px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__mid {
+  display: flex;
+  margin-top: 42px;
+}
+
+.footer__mid-element--first {
+  width: 349px;
+  margin-right: 125px;
+}
+
+.footer__mid-element--second {
+  width: 137px;
+  margin-right: 124px;
 }
