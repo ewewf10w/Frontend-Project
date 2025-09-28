@@ -34,3 +34,14 @@ input::placeholder {
   opacity: 0.6;
   color: var(--white);
 }
+
+.totop-button {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  display: flex;
+  align-items: center; /* по вертикали */
+  justify-content: center;
+  border: none;
+}

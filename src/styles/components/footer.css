@@ -1,6 +1,5 @@
 .footer {
   min-width: 1920px;
-  height: 566px;
 }
 
 .footer__container {
@@ -112,4 +111,31 @@
 .footer__mid-element--second {
   width: 137px;
   margin-right: 124px;
+}
+
+.footer__low {
+  width: 1230px;
+  height: 40px;
+  margin-top: 38px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__low-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--white);
+  display: flex;
+  gap: 4px;
+}
+
+.footer__low-totop {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--white);
+  gap: 16px;
+  align-items: flex-end;
 }
