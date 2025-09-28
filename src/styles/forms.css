@@ -1,0 +1,47 @@
+.orange-button {
+  border-radius: 0 4px 4px 0;
+  padding: 0 32px;
+  border: 0;
+  height: 44px;
+  background: var(--primary);
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 314%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+}
+
+.dark-input {
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 4px;
+  width: 495px;
+  height: 44px;
+  background: rgb(255 255 255 / 12%);
+  padding-left: 16px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-left: 16px;
+}
+
+.dark-input::placeholder {
+  opacity: 0.6;
+  color: var(--white);
+}
+
+.totop-button {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
