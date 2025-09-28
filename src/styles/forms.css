@@ -1,6 +1,6 @@
 .orange-button {
   border-radius: 0 4px 4px 0;
-  padding: 0px 32px;
+  padding: 0 32px;
   border: 0;
   height: 44px;
   background: var(--primary);
@@ -15,11 +15,11 @@
 }
 
 .dark-input {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255 255 255 / 20%);
   border-radius: 4px;
   width: 495px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgb(255 255 255 / 12%);
   padding-left: 16px;
 }
 
@@ -41,7 +41,7 @@ input::placeholder {
   height: 40px;
   background: var(--primary);
   display: flex;
-  align-items: center; /* по вертикали */
+  align-items: center;
   justify-content: center;
   border: none;
 }
