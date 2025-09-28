@@ -1,0 +1,144 @@
+.footer {
+  min-width: 1920px;
+}
+
+.footer__container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  max-width: 1264px;
+  height: 406px;
+}
+
+.footer__images {
+  display: flex;
+}
+
+.footer__socials {
+  width: 184px;
+  height: 24px;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 60px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--white);
+  max-width: 493px;
+  opacity: 0.6;
+  margin-top: 24px;
+}
+
+.footer__subscribe-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+.footer__subscribe-form {
+  width: 495px;
+  height: 44px;
+  display: flex;
+  margin-top: 24px;
+}
+
+.footer__subscribe-submit-button {
+  margin-left: -131px;
+  z-index: 10;
+}
+
+.footer__subscribe-discription {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--white);
+  opacity: 0.6;
+  margin-top: 16px;
+}
+
+.footer__subscribe {
+  width: 495px;
+}
+
+.footer__higher {
+  display: flex;
+  gap: 242px;
+}
+
+.footer__mid-element {
+}
+
+.footer__mid-element-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footer__mid-element-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.footer__mid-element-text--white {
+  opacity: 1;
+}
+
+.footer__mid-element-discription {
+  gap: 4px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__mid {
+  display: flex;
+  margin-top: 42px;
+}
+
+.footer__mid-element--first {
+  width: 349px;
+  margin-right: 125px;
+}
+
+.footer__mid-element--second {
+  width: 137px;
+  margin-right: 124px;
+}
+
+.footer__low {
+  width: 1230px;
+  height: 40px;
+  margin-top: 38px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__low-copyright {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--white);
+  display: flex;
+  gap: 4px;
+}
+
+.footer__low-totop {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--white);
+  gap: 16px;
+  align-items: flex-end;
+}
