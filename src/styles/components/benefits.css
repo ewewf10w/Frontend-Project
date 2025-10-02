@@ -1,16 +1,31 @@
 .benefits {
   display: flex;
-  position: relative;
+  position: relative; /* для абсолютного фона */
   flex-direction: column;
   align-items: center;
   max-width: 1952px;
-  height: 623px;
-  padding: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  height: 623px; /* при желании можно убрать фиксированную высоту */
+  padding: 16px 16px 120px; /* оставляем верхний и боковые паддинги, нижний — под кнопку */
+  margin: 120px auto; /* сверху/снизу и центрирование по горизонтали */
+  background: none; /* убираем фон, он будет через отдельный блок */
+}
+
+.benefits__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  min-height: 565px;
   background: var(--gray-900);
+  z-index: 0;
+  border-radius: 0; /* если нужно убрать скругления */
+}
+
+/* Контент поверх фона */
+.benefits > *:not(.benefits__background) {
+  position: relative;
+  z-index: 1;
 }
 
 .benefits__our-benefits {
@@ -95,4 +110,36 @@
   color: var(--white);
   opacity: 0.6;
   margin-top: 6px;
+}
+
+.benefits__button {
+  width: 390px; /* фиксированная ширина */
+  height: 52px; /* фиксированная высота */
+  background: var(--primary);
+  border-radius: 4px;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+
+  display: flex; /* flex-контейнер для текста */
+  justify-content: center; /* центрирование текста горизонтально */
+  align-items: center; /* центрирование текста вертикально */
+  padding: 0; /* padding убран, чтобы текст не уменьшал ширину кнопки */
+  cursor: pointer;
+
+  border: 1px solid transparent;
+}
+
+.benefits__button-text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 52px; /* чтобы текст вертикально по центру по высоте кнопки */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center; /* текст по центру кнопки */
+  white-space: nowrap; /* текст не переносится */
+  width: 100%; /* текст занимает всю ширину кнопки */
+  box-sizing: border-box; /* padding не будет ломать ширину */
 }
