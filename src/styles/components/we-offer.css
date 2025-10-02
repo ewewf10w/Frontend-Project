@@ -49,12 +49,9 @@
   font-size: 16px;
   line-height: 160%;
   color: var(--gray-700);
+  margin-top: 12px;
 }
 
 .we-offer__text--accordion--panel--ico {
   margin-top: 9px;
-}
-
-.we-offer__text--accordion--panel--description {
-  margin-top: 12px;
 }
