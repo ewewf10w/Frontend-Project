@@ -11,15 +11,9 @@
 }
 
 .benefits__background {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 1920px;
   min-height: 565px;
   background: var(--gray-900);
-  z-index: 0;
-  border-radius: 0; /* если нужно убрать скругления */
 }
 
 /* Контент поверх фона */
@@ -117,9 +111,7 @@
   height: 52px; /* фиксированная высота */
   background: var(--primary);
   border-radius: 4px;
-  margin-top: 100px;
-  position: relative;
-  z-index: 1;
+  margin-top: -26px;
 
   display: flex; /* flex-контейнер для текста */
   justify-content: center; /* центрирование текста горизонтально */

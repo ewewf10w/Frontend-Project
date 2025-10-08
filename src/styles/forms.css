@@ -14,6 +14,37 @@
   color: var(--white);
 }
 
+.button {
+  background: var(--primary);
+  border-radius: 4px;
+  text-align: center;
+  font-family: var(--font-family);
+  padding: 0 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 314%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  border: none;
+}
+
+.button--contrast {
+  background: none;
+  color: var(--primary);
+  box-sizing: border-box;
+  outline: 1px solid var(--primary);
+  outline-offset: -1px;
+}
+
+.button--large {
+  padding: 0px 40px;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+}
+
 .dark-input {
   border: 1px solid rgb(255 255 255 / 20%);
   border-radius: 4px;
