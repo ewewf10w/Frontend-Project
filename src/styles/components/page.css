@@ -19,10 +19,6 @@ html {
   flex-grow: 1;
 }
 
-.page__content--page-title {
-  background-color: var(--gray-200);
-}
-
 .page__footer {
   flex-shrink: 0;
   background-color: var(--gray-900);
