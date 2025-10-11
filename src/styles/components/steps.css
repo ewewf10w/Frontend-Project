@@ -1,12 +1,8 @@
 .steps {
-  max-width: 1263px;
-  height: 344px;
-  padding: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
-
 .steps__title {
   font-weight: 700;
   font-size: 46px;
@@ -16,35 +12,64 @@
 
 .steps__items {
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
 }
 
-.steps__items-item {
+.steps-item {
   max-width: 285px;
-  height: 192px;
 }
 
-.steps__items-item-head {
+.steps-item__head {
   display: flex;
 }
 
-.steps__items-item-head-num {
+.steps-item__num {
   font-weight: 700;
+  position: relative;
   font-size: 46px;
   line-height: 130%;
   color: var(--gray-400);
 }
 
-.steps__items-item-head-num--orange {
+.steps-item__num::before,
+.steps-item__num::after {
+  content: '';
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+  z-index: -1; /* кружки за цифрой */
+}
+
+/* первый кружок */
+.steps-item__num::before {
+  background: url('images/circle-1.svg') no-repeat center/contain;
+}
+
+/* второй кружок — можно чуть сместить */
+.steps-item__num::after {
+  background: url('images/circle-2.svg') no-repeat center/contain;
+  transform: translate(-60%, -60%) scale(0);
+}
+
+/* при наведении на карточку */
+.steps-item:hover .steps-item__num {
   color: var(--primary);
 }
 
-.steps__items-item-text-cursor {
-  margin-left: 141px;
+.steps-item:hover .steps-item__num::before,
+.steps-item:hover .steps-item__num::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
-.steps__items-item-head-line {
+.steps-item__line {
   border: 1px dashed var(--gray-400);
   width: 209px;
   height: 0;
@@ -52,7 +77,7 @@
   margin-left: 23px;
 }
 
-.steps__items-item-text-title {
+.steps-item__title {
   margin-top: 16px;
   font-weight: 700;
   font-size: 20px;
@@ -60,7 +85,7 @@
   color: var(--gray-900);
 }
 
-.steps__items-item-text-discription {
+.steps-item__discription {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
