@@ -12,73 +12,45 @@
 
 .steps__items {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .steps-item {
   max-width: 285px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .steps-item__head {
   display: flex;
+  align-items: center;
+  gap: 23px;
 }
 
 .steps-item__num {
   font-weight: 700;
-  position: relative;
   font-size: 46px;
   line-height: 130%;
   color: var(--gray-400);
 }
 
-.steps-item__num::before,
-.steps-item__num::after {
-  content: '';
-  position: absolute;
-  width: 84px;
-  height: 84px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  transition:
-    transform 0.4s ease,
-    opacity 0.4s ease;
-  z-index: -1; /* кружки за цифрой */
-}
-
-/* первый кружок */
-.steps-item__num::before {
-  background: url('images/circle-1.svg') no-repeat center/contain;
-}
-
-/* второй кружок — можно чуть сместить */
-.steps-item__num::after {
-  background: url('images/circle-2.svg') no-repeat center/contain;
-  transform: translate(-60%, -60%) scale(0);
-}
-
-/* при наведении на карточку */
 .steps-item:hover .steps-item__num {
   color: var(--primary);
 }
-
-.steps-item:hover .steps-item__num::before,
-.steps-item:hover .steps-item__num::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
-}
-
 .steps-item__line {
   border: 1px dashed var(--gray-400);
   width: 209px;
   height: 0;
-  margin-top: 30px;
-  margin-left: 23px;
+}
+
+.steps-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .steps-item__title {
-  margin-top: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -90,5 +62,4 @@
   font-size: 16px;
   line-height: 160%;
   color: var(--gray-700);
-  margin-top: 8px;
 }
