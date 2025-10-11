@@ -1,21 +1,16 @@
 .we-offer {
   display: flex;
-  max-width: 1262px;
-  height: 472px;
-  padding: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 120px;
-  justify-content: space-between;
+  gap: 105px;
 }
 
 .we-offer__pic {
   border-radius: 4px;
   width: 705px;
   height: 440px;
+  flex-shrink: 0;
 }
 
-.we-offer__text--title {
+.we-offer__title {
   font-family: var(--second-family);
   font-weight: 900;
   font-size: 46px;
@@ -24,34 +19,41 @@
 }
 
 .we-offer__text {
-  width: 420px;
-  height: 308px;
+  overflow-wrap: break-word;
 }
 
-.we-offer__text--accordion {
+.accordion {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
   gap: 24px;
 }
 
-.we-offer__text--accordion--panel--title {
+.accordion__panel {
   display: flex;
   gap: 20px;
+}
+
+.accordion__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
   color: var(--gray-900);
 }
 
-.we-offer__text--accordion--panel--description {
+.accordion__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: var(--gray-700);
-  margin-top: 12px;
 }
 
-.we-offer__text--accordion--panel--ico {
-  margin-top: 9px;
+.accordion__ico {
+  padding-top: 9px;
 }
