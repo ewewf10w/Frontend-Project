@@ -1,38 +1,18 @@
 .benefits {
-  display: flex;
-  position: relative; /* для абсолютного фона */
-  flex-direction: column;
-  align-items: center;
-  max-width: 1952px;
-  height: 623px; /* при желании можно убрать фиксированную высоту */
-  padding: 16px 16px 120px; /* оставляем верхний и боковые паддинги, нижний — под кнопку */
-  margin: 120px auto; /* сверху/снизу и центрирование по горизонтали */
-  background: none; /* убираем фон, он будет через отдельный блок */
-}
-
-.benefits__background {
-  width: 1920px;
-  min-height: 565px;
   background: var(--gray-900);
+  padding-top: 80px;
+  padding-bottom: 126px;
 }
 
-/* Контент поверх фона */
-.benefits > *:not(.benefits__background) {
-  position: relative;
-  z-index: 1;
-}
-
-.benefits__our-benefits {
-  font-family: var(--font-family);
+.benefits-title {
   font-weight: 700;
   font-size: 46px;
-  margin-top: 80px;
   line-height: 130%;
   text-align: center;
   color: var(--white);
 }
 
-.benefits__text-botom-title {
+.benefits-description {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -43,49 +23,38 @@
   margin-top: 24px;
 }
 
-.benefits__icon-boxes {
+.icon-boxes {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  gap: 188px;
+  gap: 94px;
 }
 
-.benefits__icon-boxes__icon-box {
+.divider {
+  height: 188px;
+}
+
+.button--benefits {
+  margin-top: -26px;
+  padding-left: 112px;
+  padding-right: 112px;
+  width: auto;
+  align-self: center;
+}
+
+.icon-box {
   width: 285px;
   height: 188px;
   position: relative;
 }
 
-.benefits__icon-boxes__icon-box:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -94px;
-  opacity: 0.4;
-  width: 1px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.benefits__icon-boxes__icon-box__ic-contract {
+.icon-box__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.benefits__icon-boxes__icon-box__ic-helmet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefits__icon-boxes__icon-box__ic-camera {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefits__icon-boxes__icon-box__title {
+.icon-box__title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
@@ -95,7 +64,7 @@
   color: var(--white);
 }
 
-.benefits__icon-boxes__icon-box__description {
+.icon-box__description {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -104,34 +73,4 @@
   color: var(--white);
   opacity: 0.6;
   margin-top: 6px;
-}
-
-.benefits__button {
-  width: 390px; /* фиксированная ширина */
-  height: 52px; /* фиксированная высота */
-  background: var(--primary);
-  border-radius: 4px;
-  margin-top: -26px;
-
-  display: flex; /* flex-контейнер для текста */
-  justify-content: center; /* центрирование текста горизонтально */
-  align-items: center; /* центрирование текста вертикально */
-  padding: 0; /* padding убран, чтобы текст не уменьшал ширину кнопки */
-  cursor: pointer;
-
-  border: 1px solid transparent;
-}
-
-.benefits__button-text {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 52px; /* чтобы текст вертикально по центру по высоте кнопки */
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
-  text-align: center; /* текст по центру кнопки */
-  white-space: nowrap; /* текст не переносится */
-  width: 100%; /* текст занимает всю ширину кнопки */
-  box-sizing: border-box; /* padding не будет ломать ширину */
 }
