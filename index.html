@@ -25,7 +25,7 @@
   </head>
   <body>
     <div class="page">
-      <header class="page__header" id="header">
+      <header class="page__header">
         <div class="container">
           <div class="header">
             <div class="header__logo">
@@ -64,16 +64,20 @@
                 />
               </svg>
             </div>
-            <div class="header__menu">
-              <div class="header__menu-button">About us</div>
-              <div class="header__menu-button header__menu-button-current">Services</div>
-              <div class="header__menu-button">Work</div>
-              <div class="header__menu-button">News</div>
-              <div class="header__menu-button">Contacts</div>
-            </div>
-            <div class="header__call">
-              <div class="header__call-element">
-                <div class="header__call-element-ico">
+            <nav aria-label="Main menu">
+              <ul class="menu">
+                <li class="menu__button"><a href="#">About us</a></li>
+                <li class="menu__button menu__button--current">
+                  <a href="#" aria-current="page">Services</a>
+                </li>
+                <li class="menu__button"><a href="#">Work</a></li>
+                <li class="menu__button"><a href="#">News</a></li>
+                <li class="menu__button"><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="call">
+              <div class="call__element">
+                <div>
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -83,13 +87,13 @@
                     />
                   </svg>
                 </div>
-                <div class="header__call-element-info">
-                  <div class="header__call-element-info-discription">Call us</div>
-                  <div class="header__call-element-info-adress">(405) 555-0128</div>
+                <div>
+                  <div class="call__discription">Call us</div>
+                  <div class="call__adress">(405) 555-0128</div>
                 </div>
               </div>
-              <div class="header__call-element">
-                <div class="header__call-element-ico">
+              <div class="call__element">
+                <div>
                   <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
@@ -105,9 +109,9 @@
                     />
                   </svg>
                 </div>
-                <div class="header__call-element-info">
-                  <div class="header__call-element-info-discription">Talk to us</div>
-                  <div class="header__call-element-info-adress">hello@createx.com</div>
+                <div>
+                  <div class="call__discription">Talk to us</div>
+                  <div class="call__adress">hello@createx.com</div>
                 </div>
               </div>
             </div>
@@ -377,11 +381,163 @@
             </div>
           </div>
         </div>
+        <div class="page-pricing">
+          <div class="container">
+            <div class="pricing-title">Pricing</div>
+            <div class="pricing-description">We offer you three categories of construction.</div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Items</th>
+                  <th>
+                    <div class="plan">
+                      <div class="plan-title">BASIC</div>
+                      <div class="plan-description">$20 per m2</div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="plan">
+                      <div class="plan-title">STANDART</div>
+                      <div class="plan-description">$30 per m2</div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="plan">
+                      <div class="plan-title">BUSINESS</div>
+                      <div class="plan-description">$40 per m2</div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Installation plan</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Planning solutions (2-3 options)</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lighting plan</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Flooring plan</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Heating floor laying scheme</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Air conditioner zones layout</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3D visualization of all rooms</td>
+                  <td>simplified</td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Visualization of each room (3-4 angles)</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <img src="images/Mark.svg" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Terms</td>
+                  <td>10 days</td>
+                  <td>20 days</td>
+                  <td>30 days</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    <button class="button button--contrast button--small">send request</button>
+                  </td>
+                  <td>
+                    <button class="button button--contrast button--small">send request</button>
+                  </td>
+                  <td>
+                    <button class="button button--contrast button--small">send request</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="partners">
+              <div class="partners-title">Supported by 12+ partners</div>
+              <div class="partners-items">
+                <img src="images/partners/partner1.png" />
+                <img src="images/partners/partner2.png" />
+                <img src="images/partners/partner3.png" />
+                <img src="images/partners/partner4.png" />
+                <img src="images/partners/partner5.png" />
+                <img src="images/partners/partner6.png" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer class="page__footer">
-        <div class="footer">
-          <div class="footer__container">
-            <div class="footer__higher">
+        <div class="container">
+          <div class="footer">
+            <div class="footer__top">
               <div>
                 <div class="footer__images">
                   <div class="footer__logo">
@@ -471,63 +627,62 @@
                   highest standards for construction sphere.
                 </div>
               </div>
-              <div class="footer__subscribe">
-                <div class="footer__subscribe-title">Let's stay in touch</div>
-                <form action="/submit-email" method="POST" class="footer__subscribe-form">
+              <div>
+                <div class="footer-form__title">Let’s stay in touch</div>
+                <form action="/submit-email" method="POST" class="footer-form">
                   <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Your email address"
                     required
-                    class="dark-input"
+                    class="footer__input"
                   />
-                  <button type="submit" class="orange-button footer__subscribe-submit-button">Subscribe</button>
+                  <button type="submit" class="subscribe-button">Subscribe</button>
                 </form>
-                <div class="footer__subscribe-discription">
+                <div class="footnote">
                   *Subscribe to our newsletter to receive communications and early updates from Createx Construction
                   Bureau.
                 </div>
               </div>
             </div>
             <div class="footer__mid">
-              <div class="footer__mid-element footer__mid-element--first">
-                <div class="footer__mid-element-title">HEAD OFFICE</div>
-                <div class="footer__mid-element-discription">
+              <div class="contact">
+                <div class="contact__title">HEAD OFFICE</div>
+                <div class="contact__description">
                   <div>
-                    <span class="footer__mid-element-text footer__mid-element-text--white">Address: </span>
-                    <span class="footer__mid-element-text">8502 Preston Rd. Inglewood, New York</span>
+                    <span class="contact__text contact__text--white">Address: </span>
+                    <span class="contact__text">8502 Preston Rd. Inglewood, New York</span>
                   </div>
                   <div>
-                    <span class="footer__mid-element-text footer__mid-element-text--white">Call: </span>
-                    <span class="footer__mid-element-text">(405) 555-0128</span>
+                    <span class="contact__text contact__text--white">Call: </span>
+                    <span class="contact__text">(405) 555-0128</span>
                   </div>
                   <div>
-                    <span class="footer__mid-element-text footer__mid-element-text--white">Email: </span>
-                    <span class="footer__mid-element-text">hello@createx.com</span>
+                    <span class="contact__text contact__text--white">Email: </span>
+                    <span class="contact__text">hello@createx.com</span>
                   </div>
                 </div>
               </div>
-
-              <nav class="footer__mid-element footer__mid-element--second">
-                <div class="footer__mid-element-title">WHO WE ARE</div>
-                <ul class="footer__mid-element-discription">
-                  <li class="footer__mid-element-text"><a href="#">About us</a></li>
-                  <li class="footer__mid-element-text"><a href="#">Available Positions</a></li>
-                  <li class="footer__mid-element-text"><a href="#">Contacts</a></li>
+              <nav class="footer__nav">
+                <div class="footer-nav__title">WHO WE ARE</div>
+                <ul class="footer-nav__description">
+                  <li class="footer-nav__text"><a href="#">About us</a></li>
+                  <li class="footer-nav__text"><a href="#">Available Positions</a></li>
+                  <li class="footer-nav__text"><a href="#">Contacts</a></li>
                 </ul>
               </nav>
-              <nav class="footer__mid-element">
-                <div class="footer__mid-element-title">OUR EXPERIENCE</div>
-                <ul class="footer__mid-element-discription">
-                  <li class="footer__mid-element-text"><a href="#">Services</a></li>
-                  <li class="footer__mid-element-text"><a href="#">Work</a></li>
-                  <li class="footer__mid-element-text"><a href="#">News</a></li>
+              <nav class="footer__nav">
+                <div class="footer-nav__title">OUR EXPERIENCE</div>
+                <ul class="footer-nav__description">
+                  <li class="footer-nav__text"><a href="#">Services</a></li>
+                  <li class="footer-nav__text"><a href="#">Work</a></li>
+                  <li class="footer-nav__text"><a href="#">News</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="footer__low">
-              <div class="footer__low-copyright">
+            <div class="footer__bottom">
+              <div class="copyright">
                 <span class>© All rights reserved. Made with</span>
                 <span>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -541,18 +696,20 @@
                 </span>
                 <span>by Createx Studio</span>
               </div>
-              <div class="footer__low-totop">
+              <div class="to-top">
                 <div>GO TO TOP</div>
-                <a href="#header">
+                <a href="#top">
                   <button class="totop-button">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.6834 6.90237 12.3166 6.90237 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071Z"
-                        fill="white"
-                      />
-                    </svg>
+                    <div>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.6834 6.90237 12.3166 6.90237 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </button>
                 </a>
               </div>
