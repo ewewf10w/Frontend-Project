@@ -33,6 +33,28 @@
   font-size: 46px;
   line-height: 130%;
   color: var(--gray-400);
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s;
+}
+
+.steps-item__num::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 116px;
+  height: 116px;
+  background-image: url('images/bg-circles.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: transform 0.2s ease;
+}
+
+.steps-item:hover .steps-item__num::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .steps-item:hover .steps-item__num {

@@ -58,6 +58,9 @@ input {
   background: rgb(255 255 255 / 12%);
   padding: 10px 0 11px 16px;
   box-sizing: border-box;
+  transition:
+    border 0.2s ease,
+    box-shadow 02s ease;
 
   font-weight: 400;
   font-size: 14px;
