@@ -53,19 +53,16 @@ button.button--small {
 }
 
 input {
-  border: 1px solid rgb(255 255 255 / 20%);
+  border: 1px solid var(--gray-400);
   border-radius: 4px;
-  background: rgb(255 255 255 / 12%);
-  padding: 10px 0 11px 16px;
-  box-sizing: border-box;
-  transition:
-    border 0.2s ease,
-    box-shadow 02s ease;
+  background: var(--gray-200);
+  padding: 10px 0px 11px 15px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--gray-800);
+  transition: background 0.3s ease;
 }
 
 input:focus {
@@ -77,9 +74,53 @@ input:focus {
     0 12px 10px -6px rgba(255, 90, 48, 0.04),
     0 30px 24px -10px rgba(255, 90, 48, 0.05),
     0 80px 80px -20px rgba(255, 90, 48, 0.08);
+  background: var(--white);
 }
 
-input:
 input::placeholder {
-  opacity: 0.6;
+  color: var(--gray-600);
+}
+
+textarea {
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  resize: none;
+  background: var(--gray-200);
+  padding: 10px 0px 11px 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-800);
+  transition: background 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid rgba(255, 90, 48, 0.4);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0 12px 10px -6px rgba(255, 90, 48, 0.04),
+    0 30px 24px -10px rgba(255, 90, 48, 0.05),
+    0 80px 80px -20px rgba(255, 90, 48, 0.08);
+  background: var(--white);
+}
+
+textarea::placeholder {
+  color: var(--gray-600);
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-800);
+}
+
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  background-image: url('images/unchecked.svg');
+  accent-color: var(--primary);
 }
