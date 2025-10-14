@@ -40,6 +40,13 @@
 
 input.footer__input {
   width: 495px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input.footer__input:focus {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
 }
 
 button.subscribe-button {
