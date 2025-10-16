@@ -40,12 +40,12 @@
 
 input.footer__input {
   width: 495px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgb(255 255 255 / 12%);
+  border: 1px solid rgb(255 255 255 / 12%);
 }
 
 input.footer__input:focus {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgb(255 255 255 / 12%);
   color: var(--white);
 }
 
