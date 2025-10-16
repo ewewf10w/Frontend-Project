@@ -1,20 +1,4 @@
-.orange-button {
-  border-radius: 0 4px 4px 0;
-  padding: 0 32px;
-  border: 0;
-  height: 44px;
-  background: var(--primary);
-  outline: none;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 314%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--white);
-}
-
-.button {
+button {
   background: var(--primary);
   border-radius: 4px;
   text-align: center;
@@ -28,9 +12,20 @@
   text-align: center;
   color: var(--white);
   border: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.1s ease;
 }
 
-.button--contrast {
+button:hover {
+  background: #fc3300;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.button--contrast {
   background: none;
   color: var(--primary);
   box-sizing: border-box;
@@ -38,41 +33,94 @@
   outline-offset: -1px;
 }
 
-.button--large {
+button.button--contrast:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+button.button--large {
   padding: 0px 40px;
   font-size: 16px;
   line-height: 325%;
   letter-spacing: 0.03em;
 }
 
-.dark-input {
-  border: 1px solid rgb(255 255 255 / 20%);
-  border-radius: 4px;
-  width: 495px;
-  height: 44px;
-  background: rgb(255 255 255 / 12%);
-  padding-left: 16px;
+button.button--small {
+  padding: 0px 24px;
+  font-size: 12px;
+  line-height: 300%;
+  letter-spacing: 0.04em;
 }
 
-input::placeholder {
+input {
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  background: var(--gray-200);
+  padding: 10px 0px 11px 15px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  margin-left: 16px;
+  color: var(--gray-800);
+  transition: background 0.3s ease;
 }
 
-.dark-input::placeholder {
-  opacity: 0.6;
-  color: var(--white);
-}
-
-.totop-button {
+input:focus {
+  outline: none;
+  border: 1px solid rgba(255, 90, 48, 0.4);
   border-radius: 4px;
-  width: 40px;
-  height: 40px;
-  background: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
+  box-shadow:
+    0 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0 12px 10px -6px rgba(255, 90, 48, 0.04),
+    0 30px 24px -10px rgba(255, 90, 48, 0.05),
+    0 80px 80px -20px rgba(255, 90, 48, 0.08);
+  background: var(--white);
+}
+
+input::placeholder {
+  color: var(--gray-600);
+}
+
+textarea {
+  border: 1px solid var(--gray-400);
+  border-radius: 4px;
+  resize: none;
+  background: var(--gray-200);
+  padding: 10px 0px 11px 15px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-800);
+  transition: background 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid rgba(255, 90, 48, 0.4);
+  border-radius: 4px;
+  box-shadow:
+    0 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0 12px 10px -6px rgba(255, 90, 48, 0.04),
+    0 30px 24px -10px rgba(255, 90, 48, 0.05),
+    0 80px 80px -20px rgba(255, 90, 48, 0.08);
+  background: var(--white);
+}
+
+textarea::placeholder {
+  color: var(--gray-600);
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray-800);
+}
+
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  background-image: url('images/unchecked.svg');
+  accent-color: var(--primary);
 }

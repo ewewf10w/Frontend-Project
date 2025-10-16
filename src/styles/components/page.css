@@ -19,12 +19,22 @@ html {
   flex-grow: 1;
 }
 
-.page__content--page-title {
-  background-color: var(--gray-200);
+.page-we-offer {
+  margin-top: 120px;
+}
+
+.page-steps {
+  margin-top: 180px;
 }
 
 .page__footer {
   flex-shrink: 0;
   background-color: var(--gray-900);
-  height: 566px;
+}
+
+.page-benefits {
+  margin-top: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
