@@ -1,7 +1,6 @@
 button {
   background: var(--primary);
   border-radius: 4px;
-  text-align: center;
   font-family: var(--font-family);
   padding: 0 32px;
   font-weight: 700;
@@ -39,14 +38,14 @@ button.button--contrast:hover {
 }
 
 button.button--large {
-  padding: 0px 40px;
+  padding: 0 40px;
   font-size: 16px;
   line-height: 325%;
   letter-spacing: 0.03em;
 }
 
 button.button--small {
-  padding: 0px 24px;
+  padding: 0 24px;
   font-size: 12px;
   line-height: 300%;
   letter-spacing: 0.04em;
@@ -56,8 +55,7 @@ input {
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   background: var(--gray-200);
-  padding: 10px 0px 11px 15px;
-
+  padding: 10px 0 11px 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -67,13 +65,13 @@ input {
 
 input:focus {
   outline: none;
-  border: 1px solid rgba(255, 90, 48, 0.4);
+  border: 1px solid rgb(255 90 48 / 40%);
   border-radius: 4px;
   box-shadow:
-    0 4px 4px -4px rgba(30, 33, 44, 0.03),
-    0 12px 10px -6px rgba(255, 90, 48, 0.04),
-    0 30px 24px -10px rgba(255, 90, 48, 0.05),
-    0 80px 80px -20px rgba(255, 90, 48, 0.08);
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(255 90 48 / 4%),
+    0 30px 24px -10px rgb(255 90 48 / 5%),
+    0 80px 80px -20px rgb(255 90 48 / 8%);
   background: var(--white);
 }
 
@@ -86,8 +84,7 @@ textarea {
   border-radius: 4px;
   resize: none;
   background: var(--gray-200);
-  padding: 10px 0px 11px 15px;
-
+  padding: 10px 0 11px 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -97,13 +94,13 @@ textarea {
 
 textarea:focus {
   outline: none;
-  border: 1px solid rgba(255, 90, 48, 0.4);
+  border: 1px solid rgb(255 90 48 / 40%);
   border-radius: 4px;
   box-shadow:
-    0 4px 4px -4px rgba(30, 33, 44, 0.03),
-    0 12px 10px -6px rgba(255, 90, 48, 0.04),
-    0 30px 24px -10px rgba(255, 90, 48, 0.05),
-    0 80px 80px -20px rgba(255, 90, 48, 0.08);
+    0 4px 4px -4px rgb(30 33 44 / 3%),
+    0 12px 10px -6px rgb(255 90 48 / 4%),
+    0 30px 24px -10px rgb(255 90 48 / 5%),
+    0 80px 80px -20px rgb(255 90 48 / 8%);
   background: var(--white);
 }
 
