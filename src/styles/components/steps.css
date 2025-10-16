@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 60px;
 }
+
 .steps__title {
   font-weight: 700;
   font-size: 46px;
@@ -60,6 +61,7 @@
 .steps-item:hover .steps-item__num {
   color: var(--primary);
 }
+
 .steps-item__line {
   border: 1px dashed var(--gray-400);
   width: 209px;
