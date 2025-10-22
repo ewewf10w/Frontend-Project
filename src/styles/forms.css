@@ -1,57 +1,4 @@
-button {
-  background: var(--primary);
-  border-radius: 4px;
-  font-family: var(--font-family);
-  padding: 0 32px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 314%;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--white);
-  border: none;
-  transition:
-    background-color 0.3s ease,
-    transform 0.1s ease;
-}
-
-button:hover {
-  background: #fc3300;
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-button.button--contrast {
-  background: none;
-  color: var(--primary);
-  box-sizing: border-box;
-  outline: 1px solid var(--primary);
-  outline-offset: -1px;
-}
-
-button.button--contrast:hover {
-  background: var(--primary);
-  color: var(--white);
-}
-
-button.button--large {
-  padding: 0 40px;
-  font-size: 16px;
-  line-height: 325%;
-  letter-spacing: 0.03em;
-}
-
-button.button--small {
-  padding: 0 24px;
-  font-size: 12px;
-  line-height: 300%;
-  letter-spacing: 0.04em;
-}
-
-input {
+.input {
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   background: var(--gray-200);
@@ -63,7 +10,7 @@ input {
   transition: background 0.3s ease;
 }
 
-input:focus {
+.input:focus {
   outline: none;
   border: 1px solid rgb(255 90 48 / 40%);
   border-radius: 4px;
@@ -75,11 +22,11 @@ input:focus {
   background: var(--white);
 }
 
-input::placeholder {
+.input::placeholder {
   color: var(--gray-600);
 }
 
-textarea {
+.textarea {
   border: 1px solid var(--gray-400);
   border-radius: 4px;
   resize: none;
@@ -92,7 +39,7 @@ textarea {
   transition: background 0.3s ease;
 }
 
-textarea:focus {
+.textarea:focus {
   outline: none;
   border: 1px solid rgb(255 90 48 / 40%);
   border-radius: 4px;
@@ -104,20 +51,13 @@ textarea:focus {
   background: var(--white);
 }
 
-textarea::placeholder {
+.textarea::placeholder {
   color: var(--gray-600);
 }
 
-label {
+.label {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: var(--gray-800);
-}
-
-input[type='checkbox'] {
-  width: 16px;
-  height: 16px;
-  background-image: url('images/unchecked.svg');
-  accent-color: var(--primary);
 }

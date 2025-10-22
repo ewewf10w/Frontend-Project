@@ -10,9 +10,13 @@
 @import './styles/components/steps.css';
 @import './styles/components/footer.css';
 @import './styles/forms.css';
+@import './styles/button.css';
 @import './styles/components/we-offer.css';
 @import './styles/components/benefits.css';
 @import './styles/components/portfolio.css';
 @import './styles/components/pricing.css';
 @import './styles/components/table.css';
 @import './styles/components/application.css';
+@import './styles/components/breadcrumb.css';
+@import './styles/components/accordion.css';
+@import './styles/components/contact.css';

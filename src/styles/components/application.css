@@ -59,6 +59,12 @@
   text-align: center;
 }
 
-.checkbox-input {
-  margin-top: 3px;
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.application__checkbox-container {
+  padding-top: 0;
 }

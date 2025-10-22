@@ -72,40 +72,6 @@ button.subscribe-button {
   margin-top: 49px;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  width: 349px;
-}
-
-.contact__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-
-.contact__description {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.contact__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: var(--white);
-  opacity: 0.6;
-}
-
-.contact__text--white {
-  opacity: 1;
-}
-
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -159,8 +125,4 @@ button.subscribe-button {
   display: flex;
   gap: 16px;
   align-items: flex-end;
-}
-
-button.totop-button {
-  padding: 8px;
 }

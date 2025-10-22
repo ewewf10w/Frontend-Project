@@ -1,4 +1,4 @@
-table {
+.table {
   border: 1px solid var(--gray-300);
   border-radius: 4px;
   width: 100%;
@@ -10,7 +10,7 @@ table {
   background: var(--white);
 }
 
-th {
+.th {
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
@@ -18,18 +18,18 @@ th {
   padding: 32px 0 26px;
 }
 
-th:first-child {
+.th:first-child {
   text-align: left;
   padding-left: 24px;
   vertical-align: bottom;
 }
 
-td:first-child {
+.td:first-child {
   padding-left: 24px;
   text-align: left;
 }
 
-td {
+.td {
   padding-top: 16px;
   padding-bottom: 16px;
   font-weight: 400;
@@ -39,26 +39,26 @@ td {
   text-align: center;
 }
 
-tbody tr:last-child td {
+.tbody tr:last-child td {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-tbody tr:nth-child(odd) {
+.tbody tr:nth-child(odd) {
   background: var(--gray-200);
 }
 
-td img,
-td button {
+.td img,
+.td button {
   display: block;
   margin: 0 auto;
 }
 
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4),
-th:nth-child(2),
-th:nth-child(3),
-th:nth-child(4) {
+.td:nth-child(2),
+.td:nth-child(3),
+.td:nth-child(4),
+.th:nth-child(2),
+.th:nth-child(3),
+.th:nth-child(4) {
   width: 245px;
 }
