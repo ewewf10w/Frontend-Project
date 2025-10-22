@@ -2,24 +2,26 @@
   display: flex;
   flex-direction: row;
   background-color: var(--gray-200);
-}
-
-.page-title-container {
   max-width: 1920px;
-  display: flex;
+  background-image: url('images/background1.png');
+  background-repeat: no-repeat;
+  background-position: right;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 18px;
+  padding-bottom: 115px;
 }
 
-.page-title-text {
-  margin-left: 345px;
+.page-title__text {
+  width: 600px;
+  margin-top: 82px;
 }
 
-.page-title-background {
+.page-title__background {
   margin-left: auto;
 }
 
-.page-title-title {
+.page-title__title {
   white-space: normal;
   overflow-wrap: break-word;
   max-width: 590px;
@@ -32,7 +34,7 @@
   color: var(--gray-900);
 }
 
-.page-title-discription {
+.page-title__discription {
   margin-top: 24px;
   font-weight: 400;
   font-size: 20px;

@@ -1,4 +1,8 @@
 .steps {
+  margin-top: 180px;
+}
+
+.steps__content {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -16,20 +20,20 @@
   gap: 30px;
 }
 
-.steps-item {
+.step {
   max-width: 285px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.steps-item__head {
+.step__head {
   display: flex;
   align-items: center;
   gap: 23px;
 }
 
-.steps-item__num {
+.step__num {
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
@@ -39,7 +43,7 @@
   transition: color 0.3s;
 }
 
-.steps-item__num::before {
+.step__num::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -54,34 +58,34 @@
   transition: transform 0.2s ease;
 }
 
-.steps-item:hover .steps-item__num::before {
+.step:hover .step__num::before {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.steps-item:hover .steps-item__num {
+.step:hover .step__num {
   color: var(--primary);
 }
 
-.steps-item__line {
+.step__line {
   border: 1px dashed var(--gray-400);
   width: 209px;
   height: 0;
 }
 
-.steps-item__text {
+.step__text {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.steps-item__title {
+.step__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
   color: var(--gray-900);
 }
 
-.steps-item__discription {
+.step__discription {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;

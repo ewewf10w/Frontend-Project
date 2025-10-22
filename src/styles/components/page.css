@@ -9,29 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.page__header {
-  flex-shrink: 0;
-  position: absolute;
-  width: 100%;
-}
-
 .page__content {
   flex-grow: 1;
-}
-
-.page__we-offer {
-  margin-top: 120px;
-}
-
-.page__steps {
-  margin-top: 180px;
-}
-
-.page__benefits {
-  margin-top: 120px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .page__footer {
