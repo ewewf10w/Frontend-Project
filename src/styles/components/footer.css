@@ -57,7 +57,7 @@ button.subscribe-button {
   border-radius: 0 4px 4px 0;
 }
 
-.footnote {
+.footer-form__footnote {
   margin-top: 16px;
   font-weight: 400;
   font-size: 12px;
@@ -117,7 +117,7 @@ button.subscribe-button {
   align-items: flex-end;
 }
 
-.to-top {
+.footer__to-top {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
