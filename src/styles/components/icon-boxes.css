@@ -1,7 +1,6 @@
 .icon-boxes {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
   gap: 94px;
 }
 

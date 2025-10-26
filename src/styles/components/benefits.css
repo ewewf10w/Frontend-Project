@@ -28,6 +28,7 @@
   color: var(--white);
   opacity: 0.6;
   margin-top: 24px;
+  margin-bottom: 60px;
 }
 
 .benefits__divider {
