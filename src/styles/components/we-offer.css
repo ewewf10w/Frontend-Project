@@ -4,14 +4,16 @@
 
 .we-offer__content {
   display: flex;
-  gap: 105px;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .we-offer__pic {
   border-radius: 4px;
-  width: 705px;
+  width: auto;
   height: 440px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  object-fit: cover;
 }
 
 .we-offer__title {
@@ -24,5 +26,24 @@
 }
 
 .we-offer__text {
-  overflow-wrap: break-word;
+  max-width: 420px;
+  width: 100%;
+}
+
+@media (width<1024px) {
+  .we-offer__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width<576px) {
+  .we-offer__content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width<564px) {
+  .we-offer__content {
+    justify-content: center;
+  }
 }
