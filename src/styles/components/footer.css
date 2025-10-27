@@ -4,7 +4,12 @@
 
 .footer__top {
   display: flex;
-  gap: 242px;
+  justify-content: space-between;
+}
+
+.footer__createx {
+  max-width: 439px;
+  width: 100%;
 }
 
 .footer__images {
@@ -26,6 +31,10 @@
   margin-top: 24px;
 }
 
+.footer__form {
+  max-width: 495px;
+}
+
 .footer-form {
   margin-top: 24px;
   display: flex;
@@ -39,7 +48,8 @@
 }
 
 input.footer__input {
-  width: 495px;
+  max-width: 495px;
+  width: 100%;
   background: rgb(255 255 255 / 12%);
   border: 1px solid rgb(255 255 255 / 12%);
 }
@@ -125,4 +135,10 @@ button.subscribe-button {
   display: flex;
   gap: 16px;
   align-items: flex-end;
+}
+
+@media (width<1280px) {
+  .footer__mid {
+    gap: 148px;
+  }
 }
