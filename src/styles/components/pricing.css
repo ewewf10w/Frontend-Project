@@ -42,6 +42,15 @@
 }
 
 .partners__items {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  justify-content: center;
+}
+
+@media (width<1024px) {
+  .partners__items {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
 }
