@@ -6,13 +6,17 @@
 }
 
 .header__logo {
-  margin-right: 60px;
+  margin-right: 4.88%;
 }
 
 .menu {
   display: flex;
-  gap: 40px;
   justify-content: space-between;
+}
+
+.menu__nav {
+  max-width: 447px;
+  width: 100%;
 }
 
 .menu__button {
@@ -25,13 +29,16 @@
 
 .menu__button--current {
   color: var(--primary);
+  display: flex;
 }
 
 .call {
   display: flex;
   gap: 36px;
-  justify-content: space-between;
   margin-left: auto;
+}
+
+.call__info {
 }
 
 .call__element {
@@ -52,4 +59,38 @@
   font-size: 18px;
   line-height: 150%;
   color: var(--gray-900);
+}
+
+@media (width<1280px) {
+  .call__adress {
+    font-size: 14px;
+  }
+
+  .call__discription {
+    font-size: 12px;
+  }
+
+  .call {
+    gap: 20px;
+  }
+}
+
+@media (width<1024px) {
+  .call__info {
+    display: none;
+  }
+
+  .call {
+    gap: 10px;
+  }
+}
+
+@media (width<768px) {
+  .menu__button {
+    display: none;
+  }
+
+  .menu__button--current {
+    display: flex;
+  }
 }
