@@ -1,13 +1,12 @@
 .icon-boxes {
   display: flex;
   justify-content: center;
-  gap: 94px;
+  justify-content: space-between;
 }
 
 .icon-box {
-  width: 285px;
-  height: 188px;
-  position: relative;
+  max-width: 285px;
+  width: 100%;
 }
 
 .icon-box__icon {
@@ -35,4 +34,43 @@
   color: var(--white);
   opacity: 0.6;
   margin-top: 6px;
+}
+
+.divider {
+  max-height: 188px;
+}
+
+@media (width<1024px) {
+  .icon-boxes {
+    gap: 15px;
+  }
+
+  .icon-box__description {
+    font-size: 14px;
+  }
+
+  .icon-box__title {
+    font-size: 18px;
+  }
+}
+
+@media (width<768px) {
+  .icon-box__description {
+    font-size: 11px;
+  }
+
+  .icon-box__title {
+    font-size: 15px;
+  }
+}
+
+@media (width<576px) {
+  .icon-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-box__divider {
+    display: none;
+  }
 }

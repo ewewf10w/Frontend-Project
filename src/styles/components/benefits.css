@@ -42,3 +42,9 @@
   width: auto;
   align-self: center;
 }
+
+@media (width<576px) {
+  .button--benefits {
+    padding: 0 66px;
+  }
+}

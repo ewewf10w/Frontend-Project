@@ -6,7 +6,6 @@
 .portfolio__head {
   display: flex;
   justify-content: space-between;
-  height: 60px;
 }
 
 .portfolio__controls {
@@ -20,7 +19,6 @@
   font-size: 46px;
   line-height: 130%;
   color: var(--gray-900);
-  margin-bottom: 4px;
 }
 
 .portfolio__cards {
@@ -32,7 +30,8 @@
 .view-all {
   display: flex;
   gap: 40px;
-  width: 547px;
+  max-width: 547px;
+  width: 100%;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -43,4 +42,15 @@
   font-size: 28px;
   line-height: 150%;
   color: var(--gray-900);
+}
+
+.view-all__button {
+  max-width: 224px;
+}
+
+@media (width<576px) {
+  .view-all {
+    flex-direction: column;
+    align-items: center;
+  }
 }

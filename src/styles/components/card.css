@@ -22,13 +22,13 @@
 
 .card__image {
   border-radius: 4px 4px 0 0;
-  width: 390px;
-  height: 345px;
+  width: auto;
+  height: auto;
 }
 
 .card__image--hover {
-  width: 390px;
-  height: 277px;
+  width: auto;
+  height: auto;
 }
 
 .card__title {
@@ -49,4 +49,22 @@
 
 .card__button {
   margin-top: 24px;
+}
+
+@media (width<1280px) {
+  .card__title {
+    font-size: 18px;
+  }
+}
+
+@media (width<768px) {
+  .card {
+    display: none;
+  }
+
+  .card--hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
