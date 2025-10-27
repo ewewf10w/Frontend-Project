@@ -142,3 +142,42 @@ button.subscribe-button {
     gap: 148px;
   }
 }
+
+@media (width<1024px) {
+  .footer__images {
+    gap: 30px;
+  }
+
+  .footer__mid {
+    gap: 36px;
+  }
+
+  .footer__top {
+    gap: 30px;
+  }
+
+  .footer__createx {
+    max-width: 355px;
+  }
+}
+
+@media (width<768px) {
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__mid {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width<564px) {
+  .footer__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__images {
+    flex-wrap: wrap;
+  }
+}
