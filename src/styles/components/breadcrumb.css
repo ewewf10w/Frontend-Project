@@ -7,9 +7,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--gray-800);
+  color: var(--text-color);
 }
 
 .breadcrumb__item--light {
-  color: var(--gray-600);
+  color: var(--text-muted);
 }

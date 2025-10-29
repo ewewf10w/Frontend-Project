@@ -7,12 +7,16 @@
   max-width: 1920px;
 }
 
+.label {
+  color: var(--text-color);
+}
+
 .application__content {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   padding: 48px 40px;
-  border: 1px solid var(--gray-300);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   width: 495px;
   height: 666px;
@@ -21,7 +25,7 @@
     0 12px 10px -6px rgb(30 33 44 / 8%),
     0 26px 24px -10px rgb(30 33 44 / 10%),
     0 60px 80px -20px rgb(30 33 44 / 16%);
-  background: var(--white);
+  background: var(--card-bg);
   gap: 24px;
 }
 
@@ -31,7 +35,7 @@
   font-size: 28px;
   line-height: 150%;
   text-align: center;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 .application__form {

@@ -3,4 +3,17 @@
 
   --color-primary: var(--gray-800);
   --color-secondary: var(--color-white);
+
+  --page-bg: var(--gray-900);
+  --text-color: var(--gray-100);
+
+  --card-bg: var(--gray-800);
+  --section-bg: var(--gray-700);
+  --benefits-bg: var(--gray-800);
+
+  --text-muted: var(--gray-400);
+  --text-invert: var(--white);
+
+  --border-color: var(--gray-800);
+  --accent-color: var(--primary);
 }

@@ -1,5 +1,5 @@
 .pricing {
-  background: var(--gray-200);
+  background: var(--section-bg);
   margin-top: 100px;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -13,7 +13,7 @@
   font-size: 46px;
   line-height: 130%;
   text-align: center;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 .pricing__description {
@@ -22,7 +22,7 @@
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  color: var(--gray-700);
+  color: var(--text-muted);
   margin-bottom: 60px;
 }
 
@@ -38,7 +38,7 @@
   font-size: 46px;
   line-height: 130%;
   text-align: center;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 .partners__items {

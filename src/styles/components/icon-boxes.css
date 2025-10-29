@@ -22,7 +22,7 @@
   line-height: 150%;
   text-align: center;
   margin-top: 24px;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 .icon-box__description {
@@ -31,7 +31,7 @@
   font-size: 16px;
   line-height: 160%;
   text-align: center;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
   margin-top: 6px;
 }

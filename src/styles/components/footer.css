@@ -26,7 +26,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
   margin-top: 24px;
 }
@@ -44,7 +44,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 input.footer__input {
@@ -56,7 +56,7 @@ input.footer__input {
 
 input.footer__input:focus {
   background: rgb(255 255 255 / 12%);
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 button.subscribe-button {
@@ -72,7 +72,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
 }
 
@@ -94,7 +94,7 @@ button.subscribe-button {
   line-height: 150%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 .footer-nav__description {
@@ -107,7 +107,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
 }
 
@@ -115,7 +115,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   display: flex;
   gap: 4px;
 }
@@ -131,7 +131,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   display: flex;
   gap: 16px;
   align-items: flex-end;

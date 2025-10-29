@@ -3,6 +3,7 @@
   width: 100%;
   align-items: center;
   padding: 2px 0;
+  color: var(--text-color);
 }
 
 .header__logo {
@@ -24,7 +25,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
-  color: var(--gray-800);
+  color: var(--text-color);
 }
 
 .menu__button--current {
@@ -51,14 +52,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 150%;
-  color: var(--gray-800);
+  color: var(--text-muted);
 }
 
 .call__adress {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 @media (width<1280px) {

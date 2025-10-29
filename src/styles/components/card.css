@@ -7,7 +7,7 @@
     0 12px 10px -6px rgb(154 156 165 / 4%),
     0 30px 24px -10px rgb(154 156 165 / 5%),
     0 80px 80px -20px rgb(154 156 165 / 8%);
-  background: var(--white);
+  background: var(--card-bg);
   padding-bottom: 24px;
 }
 
@@ -17,7 +17,7 @@
     0 12px 10px -6px rgb(154 156 165 / 8%),
     0 30px 24px -10px rgb(154 156 165 / 10%),
     0 80px 80px -20px rgb(154 156 165 / 16%);
-  background: var(--white);
+  background: var(--card-bg);
 }
 
 .card__image {
@@ -35,7 +35,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  color: var(--gray-900);
+  color: var(--text-color);
   margin-top: 16px;
 }
 
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--gray-700);
+  color: var(--text-muted);
   margin-top: 4px;
 }
 

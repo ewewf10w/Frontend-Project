@@ -12,7 +12,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 .steps__items {
@@ -40,7 +40,7 @@
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
-  color: var(--gray-400);
+  color: var(--border-color);
   position: relative;
   z-index: 1;
   transition: color 0.3s;
@@ -85,14 +85,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
-  color: var(--gray-900);
+  color: var(--text-color);
 }
 
 .step__discription {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: var(--gray-700);
+  color: var(--text-muted);
 }
 
 @media (width<768px) {

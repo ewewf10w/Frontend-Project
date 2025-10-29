@@ -11,7 +11,7 @@
   line-height: 150%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 .contact__description {
@@ -24,7 +24,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
 }
 

@@ -6,7 +6,7 @@
 }
 
 .benefits__content {
-  background: var(--gray-900);
+  background: var(--benefits-bg);
   padding-top: 80px;
   padding-bottom: 126px;
 }
@@ -16,7 +16,7 @@
   font-size: 46px;
   line-height: 130%;
   text-align: center;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 .benefits__description {
@@ -25,7 +25,7 @@
   font-size: 18px;
   line-height: 150%;
   text-align: center;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
   margin-top: 24px;
   margin-bottom: 60px;
