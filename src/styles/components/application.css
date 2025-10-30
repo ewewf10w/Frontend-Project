@@ -18,8 +18,8 @@
   padding: 48px 40px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
-  width: 495px;
-  height: 666px;
+  max-width: 495px;
+  width: 100%;
   box-shadow:
     0 4px 4px -4px rgb(30 33 44 / 5%),
     0 12px 10px -6px rgb(30 33 44 / 8%),

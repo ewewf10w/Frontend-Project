@@ -8,6 +8,8 @@
     0 30px 24px -10px rgb(154 156 165 / 5%),
     0 80px 80px -20px rgb(154 156 165 / 8%);
   background: var(--card-bg);
+  border-spacing: 0;
+  border-collapse: separate;
 }
 
 .th {
@@ -141,7 +143,7 @@
   }
 
   .table__button {
-    font-size: 9px;
-    padding: 0 5px;
+    font-size: 8px;
+    padding: 0 4px;
   }
 }
