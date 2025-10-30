@@ -1,12 +1,12 @@
 .input {
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
-  background: var(--gray-200);
+  background: var(--input-bg);
   padding: 10px 0 11px 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--gray-800);
+  color: var(--input-text);
   transition: background 0.3s ease;
 }
 
@@ -19,7 +19,7 @@
     0 12px 10px -6px rgb(255 90 48 / 4%),
     0 30px 24px -10px rgb(255 90 48 / 5%),
     0 80px 80px -20px rgb(255 90 48 / 8%);
-  background: var(--white);
+  background: var(--page-bg);
 }
 
 .input::placeholder {
@@ -27,15 +27,15 @@
 }
 
 .textarea {
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   resize: none;
-  background: var(--gray-200);
+  background: var(--input-bg);
   padding: 10px 0 11px 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--gray-800);
+  color: var(--input-text);
   transition: background 0.3s ease;
 }
 
@@ -48,7 +48,7 @@
     0 12px 10px -6px rgb(255 90 48 / 4%),
     0 30px 24px -10px rgb(255 90 48 / 5%),
     0 80px 80px -20px rgb(255 90 48 / 8%);
-  background: var(--white);
+  background: var(--page-bg);
 }
 
 .textarea::placeholder {

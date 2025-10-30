@@ -1,11 +1,10 @@
 :root {
   color-scheme: dark;
 
-  --color-primary: var(--gray-800);
-  --color-secondary: var(--color-white);
-
   --page-bg: var(--gray-900);
   --text-color: var(--gray-100);
+  --input-bg: rgb(255 255 255 / 12%);
+  --input-text: var(--white);
 
   --card-bg: var(--gray-800);
   --section-bg: var(--gray-700);
