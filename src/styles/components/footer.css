@@ -4,7 +4,12 @@
 
 .footer__top {
   display: flex;
-  gap: 242px;
+  justify-content: space-between;
+}
+
+.footer__createx {
+  max-width: 439px;
+  width: 100%;
 }
 
 .footer__images {
@@ -21,9 +26,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
   margin-top: 24px;
+}
+
+.footer__form {
+  max-width: 495px;
 }
 
 .footer-form {
@@ -35,18 +44,19 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 input.footer__input {
-  width: 495px;
+  max-width: 495px;
+  width: 100%;
   background: rgb(255 255 255 / 12%);
   border: 1px solid rgb(255 255 255 / 12%);
 }
 
 input.footer__input:focus {
   background: rgb(255 255 255 / 12%);
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 button.subscribe-button {
@@ -57,12 +67,12 @@ button.subscribe-button {
   border-radius: 0 4px 4px 0;
 }
 
-.footnote {
+.footer-form__footnote {
   margin-top: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
 }
 
@@ -70,40 +80,6 @@ button.subscribe-button {
   display: flex;
   gap: 125px;
   margin-top: 49px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  width: 349px;
-}
-
-.contact__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-
-.contact__description {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.contact__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: var(--white);
-  opacity: 0.6;
-}
-
-.contact__text--white {
-  opacity: 1;
 }
 
 .footer__nav {
@@ -118,7 +94,7 @@ button.subscribe-button {
   line-height: 150%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--text-invert);
 }
 
 .footer-nav__description {
@@ -131,7 +107,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: var(--white);
+  color: var(--text-invert);
   opacity: 0.6;
 }
 
@@ -139,7 +115,7 @@ button.subscribe-button {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   display: flex;
   gap: 4px;
 }
@@ -151,16 +127,57 @@ button.subscribe-button {
   align-items: flex-end;
 }
 
-.to-top {
+.footer__to-top {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  color: var(--white);
+  color: var(--text-invert);
   display: flex;
   gap: 16px;
   align-items: flex-end;
 }
 
-button.totop-button {
-  padding: 8px;
+@media (width<1280px) {
+  .footer__mid {
+    gap: 148px;
+  }
+}
+
+@media (width<1024px) {
+  .footer__images {
+    gap: 30px;
+  }
+
+  .footer__mid {
+    gap: 36px;
+  }
+
+  .footer__top {
+    gap: 30px;
+  }
+
+  .footer__createx {
+    max-width: 355px;
+  }
+}
+
+@media (width<768px) {
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__mid {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width<564px) {
+  .footer__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__images {
+    flex-wrap: wrap;
+  }
 }

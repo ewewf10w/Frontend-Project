@@ -1,0 +1,58 @@
+.button {
+  background: var(--primary);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  padding: 0 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 314%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white);
+  border: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.1s ease;
+}
+
+.button--small {
+  padding: 0 24px;
+  font-size: 12px;
+  line-height: 300%;
+  letter-spacing: 0.04em;
+}
+
+.button--large {
+  padding: 0 40px;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+}
+
+.button:hover {
+  background: #fc3300;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button--contrast {
+  background: none;
+  color: var(--primary);
+  box-sizing: border-box;
+  outline: 1px solid var(--primary);
+  outline-offset: -1px;
+}
+
+.button--contrast:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.button--totop {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 349px;
+}
+
+.contact__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-invert);
+}
+
+.contact__description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--text-invert);
+  opacity: 0.6;
+}
+
+.contact__text--white {
+  opacity: 1;
+}

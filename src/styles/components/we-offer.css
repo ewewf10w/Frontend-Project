@@ -1,13 +1,18 @@
 .we-offer {
+}
+
+.we-offer__content {
   display: flex;
-  gap: 105px;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 .we-offer__pic {
   border-radius: 4px;
-  width: 705px;
+  width: auto;
   height: 440px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  object-fit: cover;
 }
 
 .we-offer__title {
@@ -15,45 +20,29 @@
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
-  color: var(--gray-900);
+  color: var(--text-color);
+  margin-bottom: 60px;
 }
 
 .we-offer__text {
-  overflow-wrap: break-word;
+  max-width: 420px;
+  width: 100%;
 }
 
-.accordion {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  gap: 24px;
+@media (width<1024px) {
+  .we-offer__title {
+    margin-bottom: 20px;
+  }
 }
 
-.accordion__panel {
-  display: flex;
-  gap: 20px;
+@media (width<576px) {
+  .we-offer__content {
+    flex-wrap: wrap;
+  }
 }
 
-.accordion__text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.accordion__title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 150%;
-  color: var(--gray-900);
-}
-
-.accordion__description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: var(--gray-700);
-}
-
-.accordion__ico {
-  padding-top: 9px;
+@media (width<564px) {
+  .we-offer__content {
+    justify-content: center;
+  }
 }

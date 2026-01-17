@@ -1,0 +1,15 @@
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+}
+
+.breadcrumb__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.breadcrumb__item--light {
+  color: var(--text-muted);
+}

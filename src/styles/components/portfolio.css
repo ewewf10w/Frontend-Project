@@ -1,99 +1,54 @@
 .portfolio {
-  margin-top: 154px;
-  margin-bottom: 100px;
 }
 
-.portfolio-head {
+.portfolio__head {
   display: flex;
   justify-content: space-between;
-  height: 60px;
 }
 
-.portfolio-controls {
+.portfolio__controls {
   display: flex;
   margin-top: auto;
   gap: 24px;
 }
 
-.portfolio-title {
+.portfolio__title {
   font-weight: 700;
   font-size: 46px;
   line-height: 130%;
-  color: var(--gray-900);
-  margin-bottom: 4px;
+  color: var(--text-color);
 }
 
-.portfolio-cards {
+.portfolio__cards {
   margin-top: 60px;
   display: flex;
   gap: 30px;
 }
 
-.card {
-  border-radius: 4px;
-  width: 390px;
-  text-align: center;
-  box-shadow:
-    0 4px 4px -4px rgb(30 33 44 / 3%),
-    0 12px 10px -6px rgb(154 156 165 / 4%),
-    0 30px 24px -10px rgb(154 156 165 / 5%),
-    0 80px 80px -20px rgb(154 156 165 / 8%);
-  background: var(--white);
-  padding-bottom: 24px;
-}
-
-.card--hover {
-  box-shadow:
-    0 4px 4px -4px rgb(30 33 44 / 5%),
-    0 12px 10px -6px rgb(154 156 165 / 8%),
-    0 30px 24px -10px rgb(154 156 165 / 10%),
-    0 80px 80px -20px rgb(154 156 165 / 16%);
-  background: var(--white);
-}
-
-.card-image {
-  border-radius: 4px 4px 0 0;
-  width: 390px;
-  height: 345px;
-}
-
-.card-image--hover {
-  width: 390px;
-  height: 277px;
-}
-
-.card-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
-  color: var(--gray-900);
-  margin-top: 16px;
-}
-
-.card-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: var(--gray-700);
-  margin-top: 4px;
-}
-
-.card-button {
-  margin-top: 24px;
-}
-
 .view-all {
   display: flex;
   gap: 40px;
-  width: 547px;
+  max-width: 547px;
+  width: 100%;
   margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.view-all-text {
+.view-all__text {
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
-  color: var(--gray-900);
+  color: var(--text-color);
+}
+
+.view-all__button {
+  max-width: 224px;
+}
+
+@media (width<576px) {
+  .view-all {
+    flex-direction: column;
+    align-items: center;
+  }
 }
