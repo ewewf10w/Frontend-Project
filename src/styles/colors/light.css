@@ -5,15 +5,12 @@
   --text-color: var(--gray-900);
   --input-bg: var(--gray-200);
   --input-text: var(--gray-800);
-
   --card-bg: var(--white);
   --section-bg: var(--gray-200);
   --benefits-bg: var(--gray-900);
   --footer-bg: var(--gray-900);
-
   --text-muted: var(--gray-700);
   --text-invert: var(--white);
-
   --border-color: var(--gray-300);
   --accent-color: var(--primary);
 }
